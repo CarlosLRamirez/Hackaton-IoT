@@ -51,7 +51,7 @@ long interval_pause = 5000; //10 segundos
 unsigned long tMensaje = 0;
 
 //intervalo de tiempo para enviar los mensajes por el puerto serial
-long interval_mensaje = 500; //1 segundo
+long interval_mensaje = 50; //1 segundo
 
 void setup()
 {
@@ -65,7 +65,7 @@ void loop()
   //leemos el sensor una vez
   lectura1 = analogRead(sensor);
   //esperamos un tiempo entre lecturas para no leer rebotes
-  delay(50);
+  delay(10);
   //leemos el sonesor otra vez
   lectura2 = analogRead(sensor);
 
@@ -132,6 +132,6 @@ void loop()
     //sprintf(buf, "%lu Pasos por minuto", freqpaso);
     //Serial.println(buf);
 
-    Serial.println(String(pasos) + "," + String(freqpaso));
+      Serial.println(String(lectura1) + "," + String(lectura2));
   }
 }
