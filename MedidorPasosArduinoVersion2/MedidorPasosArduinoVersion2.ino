@@ -3,14 +3,13 @@ Autor: Carlos Ramirez (carloslrm@gmail.com)
 Septiembre - 2017
 ===========================================
 
-Programa para contar pasos con sensores de presion en cada pie, y calcular la frecuencia de pasos, 
+Programa para contar pasos con sensores de presion en cada pie, y calcular la frecuencia de pasos,
 y frecuencia de flote, luego los envia por un HTTP_POST
 
 */
 
 #define DEBUG true
 #include <SoftwareSerial.h>
-
 
 //definición de pinout
 int sensorPie1 = 0;
